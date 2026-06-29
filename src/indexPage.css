@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: 'gued';
+  src: url('./assets/fonts/gued/Gued.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droxen';
+  src: url('./assets/fonts/droxen-demo/DROXEN_Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* *{
+  outline: 1px solid green;
+} */
+body {
+  margin: 0;
+  padding: 0;
+font-family: 'gued', sans-serif;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+
+@font-face {
+  font-family: 'gued';
+  src: url('./assets/fonts/gued/Gued.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Droxen';
+  src: url('./assets/fonts/droxen-demo/DROXEN_Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* *{
+  outline: 1px solid green;
+} */
+body {
+  margin: 0;
+  padding: 0;
+font-family: 'gued', sans-serif;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Fonts FIRST load hone chahiye */
+
+@font-face {
+  font-family: "Gued";
+  src: url("./Common/Font/gued/Gued.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Droxen";
+  src: url("./Common/Font/droxen-demo/DROXEN_Demo.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+

@@ -1,0 +1,289 @@
+.how-works-wrapper {
+  position: relative;
+  /* background: #f9fffb; */
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Gued", sans-serif;
+  overflow: hidden;
+}
+
+/* Glow Effect */
+.how-works-wrapper::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    #dec389c1 0%,
+    rgba(168, 105, 45, 0.4) 30%,
+    rgba(240, 187, 109, 0.15) 60%,
+    transparent 100%
+  );
+  filter: blur(120px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.works-header-section {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.works-badge {
+  display: inline-block;
+  background: #d7fce9;
+  color: #1A3C34;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.works-heading {
+  font-size: 28px;
+  line-height: 1.3;
+  font-family: DROXEN_Demo;
+  font-weight: 400;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.works-heading .highlight {
+  color: #4ADD97;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+.how-works-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 120px;
+  gap: 80px;
+}
+
+/* ===============================
+   LEFT CONTENT
+================================ */
+.how-works-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.active-content {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.step-tag {
+  display: block;
+  font-size: 20px;
+  color: #4ADD97;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: DROXEN_Demo;
+}
+
+.step-tagg {
+  display: block;
+  font-size: 20px;
+  color: #3ff89f;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: DROXEN_Demo;
+}
+
+.step-heading {
+  font-size: 20px;
+  font-family: DROXEN_Demo;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.step-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+  max-width: 420px;
+}
+
+.hold-content {
+  opacity: 0.7;
+}
+
+.small {
+  font-size: 16px;
+  color: rgb(35, 35, 35)10);
+}
+
+/* ===============================
+   RIGHT IMAGE
+================================ */
+.how-works-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 494px;
+  height: 572px;
+}
+
+/* Image Animation */
+.dynamic-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 20px;
+
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.8s ease;
+
+  filter: drop-shadow(0 25px 50px rgba(0,0,0,0.25));
+}
+
+.dynamic-image.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+.how-works-container {
+  padding: 30px 30px;
+  gap: 40px;
+}
+}
+/* ===============================
+   RESPONSIVE (TABLET)
+================================ */
+@media (max-width: 1024px) {
+  .how-works-container {
+    padding: 40px 30px;
+    gap: 20px;
+  }
+
+  .works-heading {
+    font-size: 22px;
+  }
+  .image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 384px;
+  height: 450px;
+}
+
+.step-tag {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step-heading {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+}
+
+/* ===============================
+   RESPONSIVE (MOBILE)
+================================ */
+@media (max-width: 768px) {
+  .how-works-container {
+    flex-direction: column;
+    padding: 30px 12px;
+    gap: 30px;
+  }
+
+  .how-works-left,
+  .how-works-right {
+    width: 100%;
+  }
+
+  .works-header-section {
+    text-align: left;
+  }
+
+  .works-heading {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .image-wrapper {
+    height: 440px;
+  }
+
+  .hold-content {
+    display: none;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+@media (max-width: 480px) {
+  .how-works-wrapper::before {
+    display: none;
+  }
+
+  .how-works-container {
+    padding: 20px 10px;
+  }
+
+  .step-tag {
+    font-size: 14px;
+  }
+
+  .step-heading {
+    font-size: 16px;
+  }
+
+  .step-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .image-wrapper {
+    height: 440px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .image-wrapper {
+    height: 360px;
+  }
+}

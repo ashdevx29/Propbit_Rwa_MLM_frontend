@@ -1,0 +1,160 @@
+.full-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.loader-container {
+  position: relative;
+  text-align: center;
+}
+
+/* ====================== RING WRAPPER ====================== */
+.ring-wrapper {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.progress-ring {
+  width: 100%;
+  height: 100%;
+}
+
+.animated-ring {
+  animation: ringRotate 2.5s linear infinite;
+  transform-origin: center;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 285px;
+  height: 285px;
+  transform: translate(-50%, -50%);
+  animation: spin 2.3s linear infinite;
+}
+
+.dot {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #00E8A6, #0082ED);
+  border-radius: 50%;
+  box-shadow: 0 0 28px #00E8A6, 0 0 50px #0082ED;
+}
+
+.logo-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 190px;
+  height: 190px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 55px rgba(0, 130, 237, 0.25);
+  z-index: 10;
+}
+
+.logo-box img {
+  width: 148px;
+  height: 148px;
+  object-fit: contain;
+}
+
+/* Text & Progress */
+.loading-text {
+  margin-top: 22px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #15395A;
+}
+
+.loading-text span {
+  animation: dots 1.4s infinite;
+}
+.loading-text span:nth-child(2) { animation-delay: 0.2s; }
+.loading-text span:nth-child(3) { animation-delay: 0.4s; }
+
+.progress-bar {
+  margin: 24px auto 0;
+  width: 230px;
+  height: 8px;
+  background: #E0ECF7;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 45%;
+  background: linear-gradient(90deg, #00E8A6, #0082ED);
+  animation: progressMove 1.85s ease-in-out infinite;
+}
+
+/* ====================== ANIMATIONS ====================== */
+@keyframes ringRotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes spin { 
+  from { transform: translate(-50%, -50%) rotate(0deg); } 
+  to { transform: translate(-50%, -50%) rotate(360deg); } 
+}
+@keyframes progressMove {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(320%); }
+}
+@keyframes dots {
+  0%, 25% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+/* ====================== RESPONSIVE ====================== */
+
+/* Desktop (Large Screens) */
+@media (min-width: 1024px) {
+  .ring-wrapper { width: 300px; height: 300px; }
+  .orbit { width: 268px; height: 268px; }
+  .logo-box { width: 175px; height: 175px; }
+  .logo-box img { width: 135px; height: 135px; }
+  .loading-text { font-size: 32px; }
+  .progress-bar { width: 210px; }
+}
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .ring-wrapper { width: 260px; height: 260px; }
+  .orbit { width: 232px; height: 232px; }
+  .logo-box { width: 155px; height: 155px; }
+  .logo-box img { width: 118px; height: 118px; }
+  .loading-text { font-size: 28px; margin-top: 18px; }
+  .progress-bar { width: 190px; height: 7px; }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .ring-wrapper { width: 220px; height: 220px; }
+  .orbit { width: 195px; height: 195px; }
+  .logo-box { width: 130px; height: 130px; }
+  .logo-box img { width: 98px; height: 98px; }
+  .loading-text { font-size: 24px; margin-top: 15px; }
+  .progress-bar { width: 160px; height: 6px; }
+}
+
+
+

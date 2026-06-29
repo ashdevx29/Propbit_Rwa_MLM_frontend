@@ -1,0 +1,179 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Gued";
+  src: url("./Common/Font/gued/Gued.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Droxen";
+  src: url("./Common/Font/droxen-demo/DROXEN_Demo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+
+  --theme-background-color: #F7F7F7;
+  --theme-card-bg: #ffffff;
+
+  --dark-bg: #121A1C;
+  --card-bg: #182C2D;
+  --text-light: #ffffff;
+  --text-secondary: #999999;
+  --accent-green: #3B1DDA;
+  --btn-primary: #2460F5;
+  --btn-secondary: linear-gradient(to right, #2E557C, #2460F5);
+  --wallet-purple: #3B1DDA;
+  --wallet-red: #ff5e5e;
+  --wallet-green: #2ecc71;
+  --wallet-blue: #3498db;
+}
+
+
+/* customs fonts  */
+
+/* pera fonts  */
+.plight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.pregular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.pmedium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.pbold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hlight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.hmedium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.hbold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+} */
+ body {
+  font-family: "Gued", sans-serif;
+}
+
+.headroom {
+  z-index: 50 !important;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.glow-text {
+  color: #ffffff;
+  /* font-weight: bold; */
+  text-shadow:
+    0 0 5px rgb(2, 12, 84),
+    0 0 5px #0004ff5d,
+    0 0 5px rgb(64, 48, 241),
+    0 0 10px rgb(64, 48, 241);
+}
+
+/* gradients.css */
+
+.border-gradient {
+  /* border: 1px solid;
+  border-image: linear-gradient(45deg, #003366, #00cc66, #000000) 1; */
+  border: rgb(210, 210, 210) 1px solid;
+  /* border-image: linear-gradient(135deg, #a7a6a6, #012413, #a3a3a3) 1; */
+  border-radius: 12px;
+}
+
+.theme-card-style {
+  background: var(--theme-card-bg);
+  @apply text-black;
+   
+}
+
+
+/* Hide scrollbar but allow scroll */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
+
+ 
+
+ @font-face {
+  font-family: "Droxen";
+  src: url("./Common/Font/droxen-demo/DROXEN_Demo.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+.droxen-font{
+  font-family: "Droxen", sans-serif;
+}
+
+
+ @font-face {
+  font-family: "Gued";
+  src: url("./Common/Font/gued/Gued.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.gued-font {
+  font-family: "Gued", sans-serif;
+}

@@ -1,0 +1,528 @@
+.nova-wrapper {
+  --nova-primary: #4ADD97;
+  --nova-bg-light: #f8fffb;
+  --nova-dark: #121212;
+  --nova-text-muted: #6b7280;
+
+  font-family: 'gued', sans-serif;
+  overflow-x: hidden;
+  background: white;
+  padding-top: 20px;
+
+
+}
+
+/* =============================
+PARTNER LOGOS
+============================= */
+
+.nova-partner-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 25px;
+}
+
+.nova-partner-row img {
+  height: 40px;
+  opacity: .9;
+}
+
+/* =============================
+FOOTER HEADING
+============================= */
+
+.nova-footer-heading {
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+.nova-footer-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.nova-footer-heading span {
+  color: #4ADD97;
+  font-family: "poly";
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* =============================
+APP BANNER
+============================= */
+
+.nova-app-card {
+  background: #4ADD97;
+  width: 90%;
+  height: 450px;
+  margin: 60px auto;
+  border-radius: 40px;
+  display: flex;
+  padding: 20px 65px;
+  padding-top: 40px;
+  color: white;
+  position: relative;
+  overflow: visible;
+}
+
+.nova-content-side {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.nova-tag {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}
+
+.nova-hero-title {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 20px 0;
+  line-height: 57px;
+  max-width: 450px;
+}
+
+.nova-hero-subtitle {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  line-height: 100%;
+  max-width: 430px;
+}
+
+.nova-market-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nova-store-img {
+  height: 48px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nova-store-img:hover {
+  transform: scale(1.05);
+}
+
+/* =============================
+3D VISUAL
+============================= */
+
+.nova-visual-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 516px;
+}
+
+.nova-phone-container {
+  position: relative;
+  transform-style: preserve-3d;
+  top: -10%;
+}
+
+.nova-phone-img {}
+
+.nova-copyright {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.nova-copyright span {
+  color: #4ADD97;
+}
+
+/* =============================
+FLOATING ELEMENTS
+============================= */
+
+.nova-floating-popup {
+  position: absolute;
+  right: -50px;
+  top: 45%;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  color: #333;
+  width: 220px;
+  z-index: 10;
+}
+
+.nova-check-circle {
+  background: var(--nova-primary);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.nova-popup-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nova-bold {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.nova-light {
+  font-size: 0.8rem;
+  color: var(--nova-text-muted);
+}
+
+.nova-floating-shield {
+  position: absolute;
+  left: -40px;
+  bottom: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =============================
+FOOTER
+============================= */
+
+.nova-footer {
+  padding: 80px 5% 40px;
+}
+
+.tagline-top {
+  border: 3px solid #4add961e;
+}
+
+.nova-footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr 3fr;
+  gap: 120px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.nova-footer-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(to right,
+      #00d383 0%,
+      #00d383 70%,
+      transparent 70%,
+      transparent 100%);
+}
+
+.nova-logo img {
+  width: 155px;
+  height: 49px;
+}
+
+.nova-brand-desc {
+  margin: 20px 0;
+  color: #000;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.nova-social-row {
+  display: flex;
+  gap: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nova-link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.nova-col-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nova-col-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(to right,
+      #4ADD97 0%,
+      #4ADD97 25%,
+      transparent 25%,
+      transparent 100%);
+}
+
+.nova-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #0F172A;
+  cursor: pointer;
+}
+
+.nova-nav span:hover {
+  color: var(--nova-primary);
+}
+
+.nova-nav a {
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  display: block;
+}
+
+.nova-nav a:hover {
+  color: var(--nova-primary);
+}
+
+/* =============================
+CONTACT
+============================= */
+
+.nova-contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.nova-contact-info img {
+  width: 16px;
+  height: 16px;
+}
+
+/* upcoming badge */
+
+.nova-upcoming-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nova-upcoming {
+  background: #D1FAE5;
+  color: #065F46;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* =============================
+BOTTOM
+============================= */
+
+.nova-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  color: var(--nova-text-muted);
+  font-size: 0.9rem;
+  position: relative;
+}
+
+/* 
+.nova-footer-bottom::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 82%,
+    #00d383 80%,
+    #00d383 100%
+  );
+} */
+
+.nova-legal-links {
+  /* display: flex;
+ align-items: center;
+ gap: 15px;
+ color: #000;
+ font-size: 16px; */
+  display: none;
+}
+
+.nova-divider {
+  width: 1px;
+  height: 15px;
+  background: #ddd;
+}
+
+/* Contact column wider */
+.nova-link-grid .nova-col:last-child {
+  grid-column: span 2;
+}
+
+.nova-social-icon i {
+  color: #000;
+  /* default color */
+  transition: 0.3s ease;
+}
+
+.nova-social-icon:hover i {
+  color: #4ADD97;
+  /* 👈 hover color */
+}
+
+/* =============================
+RESPONSIVE
+============================= */
+
+@media (max-width:1200px) {
+
+  .nova-app-card {
+    /* flex-direction: column; */
+    height: auto;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .nova-footer-top {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .nova-link-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .nova-link-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .nova-footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nova-tag {
+    font-size: 26px;
+  }
+
+  .nova-hero-title {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 100%;
+     max-width: 100%;
+  }
+
+  
+
+  .nova-app-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nova-wrapper {
+    padding: 20px 0px;
+
+  }
+
+  .nova-partner-row {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .nova-footer {
+    padding: 12px;
+  }
+
+  .nova-footer-heading h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 0;
+  }
+
+  .nova-footer-heading {
+    margin: 0;
+  }
+
+}
+
+@media (max-width:480px) {
+
+  .nova-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nova-footer-bottom {
+    font-size: 13px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nova-footer-bottom::after {
+    display: none;
+  }
+
+  .nova-contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width:400px) {
+.nova-market-links {
+    flex-direction: column;
+  }
+
+  .nova-store-img {
+    max-width: 200px;
+  }
+
+}

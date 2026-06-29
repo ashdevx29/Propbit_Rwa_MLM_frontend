@@ -1,0 +1,41 @@
+.custom-link-path {
+  stroke: #ffffff !important;
+  fill: none;
+}
+
+
+.dmfont {
+  font-family: DM Sans;
+}
+
+/* Hide scrollbar but keep scroll */
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00E8A6 0%, #0082ED 100%);
+  border-radius: 4px;
+}
+
+
+
+.dashboard-top-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .dashboard-top-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 459px) {
+  .dashboard-top-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+

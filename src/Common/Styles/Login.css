@@ -1,0 +1,358 @@
+
+
+/* Wrapper */
+
+.gglra-auth-portal-wrapper{
+height:100vh;
+max-width:100%;
+background-size:cover;
+
+
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:flex-end;
+padding:0px;
+position:relative;
+}
+.gglra-auth-portal-brand img{
+    width: 155px;
+    height: 49px;
+}
+/* Overlay */
+
+.gglra-auth-portal-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#0F172A66; /* 40% dark blue overlay */
+z-index:1;
+}
+
+/* Brand */
+
+.gglra-auth-portal-brand{
+position:absolute;
+top:40px;
+left:50px;
+color:white;
+z-index:2;
+}
+
+.gglra-auth-portal-brand-title{
+font-size:26px;
+font-weight:700;
+}
+
+.gglra-auth-portal-brand-tagline{
+font-size:12px;
+opacity:0.9;
+}
+
+/* Login Card */
+
+.gglra-auth-portal-card{
+max-width:420px;
+background:rgba(255,255,255,0.93);
+backdrop-filter:blur(10px);
+border-radius:22px;
+padding-top: 40px !important;
+padding:40px 40px;
+/* padding-right: 90px; */
+z-index:2;
+box-shadow:0 18px 45px rgba(0,0,0,0.25);
+margin-right: 120px;
+}
+
+/* Heading */
+
+.gglra-auth-portal-heading{
+text-align:center;
+font-size:20px;
+margin-bottom:10px;
+font-weight: 400;
+font-family: DROXEN_Demo;
+}
+
+.gglra-auth-portal-subheading{
+text-align:center;
+font-size:14px;
+font-weight: 400;
+color:#000;
+margin-bottom:30px;
+}
+
+/* Fields */
+
+.gglra-auth-portal-field{
+margin-bottom:20px;
+}
+
+.gglra-auth-portal-field label{
+font-size:14px;
+color:#000;
+font-weight: 400;
+}
+
+.gglra-auth-portal-input{
+width:80%;
+padding:12px;
+margin-top:6px;
+border-radius:8px;
+  border: 1px solid #E2E8F0CC;
+  box-shadow: 0px 0px 6px 0px #0000003B;
+outline:none;
+}
+
+/* Password Row */
+
+.gglra-auth-portal-password-row{
+display:flex;
+justify-content:space-between;
+}
+
+.gglra-auth-portal-forgot-link{
+font-size:12px;
+color:#41d79c;
+cursor:pointer;
+}
+
+/* Button */
+
+.gglra-auth-portal-login-btn{
+width:100%;
+background:#41d79c;
+border:none;
+padding:14px;
+border-radius:10px;
+color:white;
+font-weight:600;
+cursor:pointer;
+margin-top:10px;
+transition:0.3s;
+}
+
+.gglra-auth-portal-login-btn:hover{
+background:#2fc185;
+}
+
+/* Divider */
+
+.gglra-auth-portal-divider{
+text-align:center;
+font-size:12px;
+margin:20px 0;
+color:#94A3B8;
+font-weight: 400;
+letter-spacing: 1.2px;
+}
+
+/* Social Buttons */
+
+.gglra-auth-portal-social-row{
+display:flex;
+gap:12px;
+}
+
+.gglra-auth-portal-social-row button{
+flex:1;
+padding:10px;
+border-radius:8px;
+border:1px solid #E2E8F0;
+background:white;
+cursor:pointer;
+}
+
+/* Signup */
+
+.gglra-auth-portal-signup-text{
+text-align:center;
+margin-top:20px;
+font-size:14px;
+}
+
+.gglra-auth-portal-signup-text span{
+color:#37c987;
+cursor:pointer;
+text-decoration: none;
+}
+
+.gglra-auth-portal-signup-text  a{
+    text-decoration: none;
+}
+/* Footer */
+
+.gglra-auth-portal-footer-links{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+margin-top:20px;
+color:#777;
+}
+
+/* Opportunity */
+
+.gglra-auth-portal-opportunity{
+position:absolute;
+bottom:40px;
+left:40px;
+background:white;
+padding:10px 22px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+z-index:2;
+display: flex;
+gap: 20px;
+border-left: 5px solid #41d79c;
+}
+
+.gglra-auth-portal-opportunity img{
+    height: 64px;
+    width: 64px;
+}
+.gglra-auth-portal-opportunity-tag{
+font-size:11px;
+color:#37c987;
+font-weight:600;
+margin: 0;
+}
+
+.gglra-auth-portal-opportunity-title{
+font-size:15px;
+margin:4px 0;
+}
+
+.gglra-auth-portal-opportunity-location{
+font-size:12px;
+color:#666;
+}
+.gglra-auth-portal-opportunity-location img{
+    width: 9px;
+    height: 11px;
+}
+
+.gglra-auth-portal-google-btn{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+font-weight: 400;
+padding: 20px;
+align-items: center;
+justify-content: center;
+}
+.gglra-auth-portal-facebook-btn{
+display: flex;
+gap: 10px;
+font-size: 14px;
+font-weight: 400;
+align-items: center;
+justify-content: center;
+}
+/* Responsive */
+.gglra-auth-portal-input-box{
+position:relative;
+width:100%;
+}
+
+.gglra-input-icon{
+position:absolute;
+left:12px;
+top:50%;
+transform:translateY(-50%);
+width:15px;
+height:12px;
+opacity:0.7;
+}
+
+.gglra-input-icon-pass{
+position:absolute;
+left:12px;
+top:50%;
+transform:translateY(-50%);
+width:12px;
+height:16px;
+opacity:0.7;
+}
+
+
+.gglra-auth-portal-input{
+padding-left:40px;
+}
+/* -------- RESPONSIVE FIX -------- */
+
+@media (max-width: 1024px){
+
+.gglra-auth-portal-card{
+margin-right:40px;
+max-width:380px;
+}
+
+}
+
+@media (max-width: 900px){
+
+.gglra-auth-portal-wrapper{
+justify-content:center;
+padding:10px 20px;
+overflow-x:hidden;
+}
+.gglra-auth-portal-brand{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.gglra-auth-portal-card{
+max-width:360px;
+width:100%;
+margin-right:0;
+margin-top: 80px;
+padding: 20px;
+}
+
+.gglra-auth-portal-opportunity{
+display:none;
+}
+
+}
+
+@media (max-width: 600px){
+
+.gglra-auth-portal-card{
+max-width:100%;
+padding:25px;
+}
+
+.gglra-auth-portal-brand{
+left:20px;
+top:20px;
+}
+
+.gglra-auth-portal-heading{
+font-size:20px;
+}
+
+}
+
+@media (max-width: 420px){
+
+.gglra-auth-portal-wrapper{
+padding:15px;
+}
+
+.gglra-auth-portal-card{
+padding:20px;
+border-radius:16px;
+}
+
+.gglra-auth-portal-social-row{
+flex-direction:column;
+}
+
+.gglra-auth-portal-footer-links{
+flex-direction:column;
+gap:8px;
+text-align:center;
+}
+
+}

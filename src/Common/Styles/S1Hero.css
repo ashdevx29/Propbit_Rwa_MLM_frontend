@@ -1,0 +1,296 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  /* background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 50%, #f0fdf4 100%); */
+  background-color: #F5F7FA05;
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+  gap: 40px;
+  padding-top: 10px;
+  box-shadow: 0px 20px 20px 0px #00000014;
+  font-family: "Gued", sans-serif;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* background-image: url("../assetsPage/assets//S1Hero/bg.png"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.04;
+  /* 👈 4% image opacity */
+  pointer-events: none;
+}
+
+.hero-container::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  /* push slightly outside for smooth glow */
+  top: 60%;
+  transform: translateY(-50%);
+
+  width: 100px;
+  height: 800px;
+
+  background: radial-gradient(circle,
+      #4ADD97 0%,
+      rgba(74, 221, 150, 0.502) 30%,
+      rgba(74, 221, 150, 0.409) 60%,
+      transparent 80%);
+
+  filter: blur(80px);
+  /* makes it very soft */
+  pointer-events: none;
+}
+
+/* Text Content Styling */
+.hero-content {
+  flex: 1;
+  max-width: 850px;
+}
+
+.hero-badge {
+  background: #DCFCE7;
+  color: #1A3C34;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.6px;
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #1A3C34;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+
+  animation: typing 4s steps(30, end) infinite alternate,
+    blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 30ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000;
+  margin-bottom: 25px;
+  /* text-transform:capitalize; */
+  letter-spacing: 0%;
+  font-family: DROXEN_Demo;
+}
+
+.text-highlight {
+  color: #4ADD97;
+}
+
+.hero-description {
+  color: #4B5563;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 448px;
+}
+
+/* Buttons */
+.hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+
+.btn-primary {
+  display: inline-flex;   /* 🔥 important */
+  align-items: center;    /* vertical center */
+  gap: 8px;               /* text + icon spacing */
+
+  background: linear-gradient(0deg, #4ADD97, #4ADD97),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.002), rgba(255, 255, 255, 0.002));
+  color: #0F172A;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0px 8px 10px -6px #14532D33,
+    0px 20px 25px -5px #14532D33;
+  transition: 0.3s;
+  font-family: "gued", sans-serif;
+}
+
+.btn-secondary {
+  font-family: "gued", sans-serif;
+  background: white;
+  color: #1F2937;
+  border: 1px solid #E5E7EB;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(80, 227, 164, 0.4);
+}
+
+
+/* Image Wrapper and Floating Cards */
+.hero-image-wrapper {
+  /* flex: 1; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+.main-building {
+  width: 590px;
+  height: 409px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 40px 30px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;   /* 🔥 left align (better UX) */
+    text-align: left;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  /* Glow center me shift */
+  .hero-container::after {
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 300px;
+    height: 300px;
+    filter: blur(120px);
+  }
+
+  /* Content full width */
+  .hero-content {
+    max-width: 100%;
+  }
+
+  /* Heading responsive */
+  .hero-title {
+    font-size: 32px;
+  }
+
+  /* Description spacing fix */
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Buttons responsive */
+  .hero-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Video/Image */
+  .hero-image-wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .main-building {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 40px 14px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-actions {
+  display: flex;
+  gap: 20px;
+}
+
+
+.btn-primary {
+  gap: 6px; 
+  font-size: 16px;
+}
+
+.btn-secondary {
+  gap: 6px;
+  font-size: 16px;
+}
+
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 40px 14px;
+  }
+  .hero-title {
+    font-size: 24px;
+  }
+}

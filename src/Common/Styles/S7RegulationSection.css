@@ -1,0 +1,256 @@
+/* Container */
+.superunique-container{
+--sq-mint:#4ADD97;
+--sq-dark:#121212;
+--sq-gray:#666666;
+
+padding:100px 85px;
+background:#fafffd;
+font-family:'gued',sans-serif;
+color:var(--sq-dark);
+}
+
+/* Badge */
+.superunique-badge-center{
+text-align:center;
+}
+
+.superunique-badge-small{
+display:inline-block;
+background:#d7fce9;
+color:#121212;
+padding:6px 16px;
+border-radius:50px;
+font-size:12px;
+font-weight:600;
+letter-spacing:1px;
+margin-bottom:20px;
+text-transform:uppercase;
+}
+
+/* Heading */
+.superunique-testimonial-header{
+text-align:center;
+font-size:28px;
+font-weight:800;
+margin-bottom:60px;
+font-family:"Droxen",sans-serif;
+}
+
+.superunique-text-mint{
+color:var(--sq-mint);
+}
+
+/* Layout */
+.superunique-testimonial-layout{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
+align-items:center;
+padding-bottom:50px;
+border-bottom:1px solid #5a5959;
+}
+
+/* Left Side */
+.superunique-big-stat{
+font-size:48px;
+font-weight:400;
+line-height:1.1;
+}
+
+/* Stepper */
+.superunique-stepper{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.superunique-step{
+height:4px;
+width:25px;
+background:transparent;
+border:1px solid #0000004f;
+border-radius:10px;
+transition:0.4s;
+}
+
+.superunique-step-active{
+background:#4ADD97;
+border:1px solid #4ADD97;
+}
+
+/* Slider */
+.superunique-slider-wrapper{
+position:relative;
+min-height:220px;
+}
+
+/* Quote Card */
+.superunique-quote-container{
+position:relative;
+padding-left:50px;
+}
+
+.superunique-quote-body{
+font-size:1.2rem;
+line-height:1.7;
+font-style:normal;
+color:#444;
+display:inline;
+}
+
+.superunique-quote-icon{
+font-size:4rem;
+color:var(--sq-mint);
+opacity:0.5;
+font-family:serif;
+margin-right:8px;
+vertical-align:bottom;
+line-height:0;
+}
+
+.superunique-quote-icon-close{
+font-size:4rem;
+color:var(--sq-mint);
+opacity:0.5;
+font-family:serif;
+margin-left:8px;
+vertical-align:bottom;
+line-height:0;
+}
+
+
+
+/* Author */
+.superunique-author-card{
+display:flex;
+align-items:center;
+gap:15px;
+margin-top:30px;
+}
+
+.superunique-avatar{
+width:50px;
+height:50px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.superunique-author-name{
+display:block;
+font-weight:700;
+}
+
+.superunique-author-loc{
+font-size:0.9rem;
+color:var(--sq-gray);
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* 1200px */
+@media (max-width:1200px){
+
+.superunique-testimonial-layout{
+grid-template-columns:1fr;
+gap:60px;
+}
+
+.superunique-big-stat{
+font-size:42px;
+}
+
+}
+
+/* 992px */
+@media (max-width:992px){
+
+.superunique-container{
+padding:70px 5%;
+}
+
+.superunique-big-stat{
+font-size:36px;
+}
+
+.superunique-quote-body{
+font-size:1.05rem;
+}
+
+}
+
+/* 768px */
+@media (max-width:768px){
+
+.superunique-badge-center{
+    text-align: left;
+}
+
+.superunique-container{
+padding:60px 20px;
+}
+
+.superunique-testimonial-header{
+font-size:22px;
+text-align: left;
+}
+
+.superunique-stat-box{
+text-align: left;
+}
+.superunique-big-stat{
+font-size:30px;
+text-align: left;
+}
+
+.superunique-quote-body{
+font-size:1rem;
+}
+
+.superunique-quote-container{
+padding-left:35px;
+}
+
+.superunique-quote-icon{
+font-size:3rem;
+display:none;
+}
+
+.superunique-quote-icon-close{
+font-size:3rem;
+display:none;
+}
+
+.superunique-testimonial-layout{
+
+padding-bottom: 10px;
+}
+
+}
+
+/* 480px */
+@media (max-width:480px){
+
+.superunique-container{
+padding:50px 15px;
+padding: 20px;
+}
+
+.superunique-testimonial-header{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.superunique-big-stat{
+font-size:16px;
+
+}
+
+.superunique-avatar{
+width:40px;
+height:40px;
+}
+
+}
