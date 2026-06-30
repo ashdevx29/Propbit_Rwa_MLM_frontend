@@ -88,7 +88,7 @@ const Deposit = () => {
                 } px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300 shadow-sm hover:shadow-md`}
               disabled={isPending}
               required
-              placeholder="Enter User ID (e.g., URWA00001)"
+              placeholder="Enter User ID (e.g., PPB00001)"
               aria-invalid={!!errors.userId}
               aria-describedby={errors.userId ? "userId-error" : undefined}
             />
